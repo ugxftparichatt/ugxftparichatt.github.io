@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- นางสาวปาริชาติ เขียวหวาน -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-js-input.html</title>
+</head>
+<body>
+    หาผลบวกของตัวเลข 2 ตัว
+    <br>
+    <br>
+    input number : <input type="text" name="" id = "num1" value ="5">
+    <br>
+    <br>
+    input number : <input type="text" name="" id = "num2" value ="3">
+    <br>
+    <br>
+    <input type="button" value="submit" onclick="sum()">
+    <br>
+    <br>
+    <p id ="output"></p>
+    <script>
+    function sum() {
+        document.getElementById('output').innerHTML = 
+        // parseInt(document.getElementById('num1').value)+
+        // parseInt(document.getElementById('num2').value)
+        // Number(document.getElementById('num1').value)+
+        // Number(document.getElementById('num2').value)
+        +(document.getElementById('num1').value)+
+        +(document.getElementById('num2').value)
+    }
+    // document.write(document.getElementById('num1').value)
+    // document.write(document.getElementById('num2').value)
+    </script>
+    
+</body>
+</html>
