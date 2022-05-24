@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ปาริชาติ เขียวหวาน -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19-js-array-student.html</title>
+    <script>
+        let id = [1001, 1002, 1003, 1004, 1005]
+        let fname = ['ปาริชาติ', 'สิทธา','สิปปภาส','วิทวัส','รัตนกร','พรภวิทย์']
+        let lname = ['เขียวหวาน' ,'พงษ์สุข' ,'เกียรติประเสิรฐ' ,'ยงยิ่งยืน' ,'ทรงฉาย' ,'ศรีพงษ์']
+    </script>
+</head>
+<body>
+    <div style="text-align:center;">ข้อมูลนักเรียน</div>
+    <table border="1" style ="border-collapse:collapse; width : 100%">
+        <tr> 
+            <th>รหัส</th>
+            <th>ชื่อ</th>
+            <th>นามสกุล</th>
+        </tr>
+        <script>
+            for(let i = 0; i < id.length; i++){
+                document.write('<tr style="text-align:center;">')
+                document.write('<td>'+id[i]+'</td>')
+                document.write('<td>'+fname[i]+'</td>')
+                document.write('<td>'+lname[i]+'</td>')
+                document.write('</tr>')
+            }
+
+        </script>
+</body>
+
+</html>
