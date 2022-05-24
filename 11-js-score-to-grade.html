@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ปาริชาติ เขียวหวาน -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-js-score-to-grade.html</title>
+</head>
+<body>
+    Input Score(0-100) : <input type="text" name="" id="score">
+    <br>
+    <br>
+    <button onclick="grade()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        let s = 0
+        let g = 0
+        function grade() {
+            s = document.getElementById('score').value
+
+        if(s >= 80){ 
+           g = 'Grade = 4'
+        }else if (s >= 70) {
+           g = 'Grade = 3'
+        }else if(s  >= 60) {
+           g = 'Grade = 2'
+        }else if(s >= 50) {
+           g = 'Grade = 1'
+        }
+         else {
+           g = 'Grade = 0'
+        }
+        document.getElementById('output').innerHTML = g
+    }
+    </script>
+</body>
+</html>
